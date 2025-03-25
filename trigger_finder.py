@@ -131,7 +131,7 @@ class TriggerFinderApp(QWidget):
         folder = QFileDialog.getExistingDirectory(self, "Select Dump Folder")
         if folder:
             self.dump_folder = folder
-            self.folder_label.setText(f"📂 Dump Selected: {folder}")
+            self.folder_label.setText(f"🟢 Dump Selected: {folder}")
             self.start_scan_btn.setEnabled(True)
 
     def start_scan(self):
